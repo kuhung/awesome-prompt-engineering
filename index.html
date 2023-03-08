@@ -18,17 +18,17 @@
     <link href="./assets/min.css" rel="stylesheet">
     <link rel="alternate icon" type="image/png" href="./assets/logo.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152699840-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-152699840-2');
-
-    </script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9K4XS0DZ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S9K4XS0DZ6');
+  </script>
+
   <body>
     <div class="top-wrap" style="position: absolute; top: 1vh;width: 100%;z-index: 999"> 
       <div class="container">
@@ -47,9 +47,17 @@
 
     <div class="main-wrapper" style="position: relative; top: -6vh;">
       <div class="container main-sentence justify-content-center text-center">
-        <span id="sentence" style="font-size: 2rem;"></span>
+        <span id="sentence" style="font-size: 2rem;" onclick="copyText()">Click to copy this text</span>
       </div>
     </div>
+    
+    <script>
+      function copyText() {
+        var text = document.getElementById("sentence").innerText;
+        navigator.clipboard.writeText(text);
+        alert("Copied to clipboard: " + text);
+      }
+    </script>
 
     <div class="foot-1" style="position: absolute; bottom: 7vh;width: 100%;">
       <div class="container">
@@ -60,12 +68,12 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            <p class="lead text" style="margin-top: 1rem;">Elevate your user experience by simply scanning the QR code with your smartphone! Don't miss out on the exciting marketing opportunities awaiting you.</p>
+            <p class="lead text" style="margin-top: 1rem;">Elevate your user experience by scanning the QR code with your smartphone! </p>
             <img src="./assets/qrcode.png" style="width:48px;height:48px" />
           </div>
         </div>
         <div class="col text-center">
-        <span id="busuanzi_container_site_pv">Join the <span id="busuanzi_value_site_pv"></span> people who have already experienced it!</span>
+        <span id="busuanzi_container_site_pv">Join the <span id="busuanzi_value_site_pv"></span> people who have already experienced it! Don't miss out on the exciting marketing opportunities awaiting you.</span>
         </div>
       </div>
     </div>

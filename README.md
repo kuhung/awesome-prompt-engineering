@@ -6,3 +6,6 @@ Browse the web for a better experience : https://kuhungio.me/awesome-prompt-engi
 - Copy by clicking
 - Direct to official website
 - Recommended for you
+
+## preview
+https://github.com/kuhung/awesome-prompt-engineering/blob/master/web.png?raw=true

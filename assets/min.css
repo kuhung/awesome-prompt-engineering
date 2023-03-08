@@ -69,19 +69,45 @@ body {
 }
 
 
-/* 在移动设备上，将字体大小设置为适合屏幕的大小 */
+/* 在移动设备上，将元素设置为全屏 */
 @media screen and (max-width: 767px) {
-  .mobile-font {
-	font-size: 8vw;
+	.main-wrapper {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  overflow: auto;
+	}
+  
+	.container {
+	  max-width: 100%;
+	}
+  
+	.scrollable-text {
+	  font-size: 8vw;
+	}
   }
-}
-
-/* 在大屏幕上，将字体大小设置为较大的值 */
-@media screen and (min-width: 768px) {
-  .mobile-font {
-	font-size: 2rem;
+  
+  /* 在大屏幕上，将元素设置为适当的位置和大小 */
+  @media screen and (min-width: 768px) {
+	.main-wrapper {
+	  position: fixed;
+	  top: 45%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  max-height: 70vh;
+	  overflow: auto;
+	}
+  
+	.container {
+	  max-width: 90%;
+	}
+  
+	.scrollable-text {
+	  font-size: 2rem;
+	}
   }
-}
 
 hr {
 	overflow: visible;

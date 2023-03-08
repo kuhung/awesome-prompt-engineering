@@ -8,5 +8,4 @@ Browse the web for a better experience : https://kuhungio.me/awesome-prompt-engi
 - Recommended for you
 
 ## preview
-[https://github.com/kuhung/awesome-prompt-engineering/blob/master/web.png
-](https://raw.githubusercontent.com/kuhung/awesome-prompt-engineering/master/web.png)
+![alt text](web.png)

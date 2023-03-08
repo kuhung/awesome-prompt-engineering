@@ -68,6 +68,21 @@ body {
 	outline: 0!important;
 }
 
+
+/* 在移动设备上，将字体大小设置为适合屏幕的大小 */
+@media screen and (max-width: 767px) {
+  .mobile-font {
+	font-size: 8vw;
+  }
+}
+
+/* 在大屏幕上，将字体大小设置为较大的值 */
+@media screen and (min-width: 768px) {
+  .mobile-font {
+	font-size: 2rem;
+  }
+}
+
 hr {
 	overflow: visible;
 	box-sizing: content-box;
